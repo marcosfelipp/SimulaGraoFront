@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    background: #eeeeee;
+    color: #004a2f;
+}
+
+.overview{
+    background: #004a2f;
+    height: 70px;
+    color: #ffffff;
+
+    padding-left: 5%;
+    padding-top: 5%;
+
+    /* background: url('./img.jpg') no-repeat fixed center; */
+}
