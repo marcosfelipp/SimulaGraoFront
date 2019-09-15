@@ -4,6 +4,7 @@ body{
     color: #004a2f;
 }
 
+a { color: inherit;}
 
 .overview{
     background: #004a2f;
@@ -77,11 +78,21 @@ body{
     padding: 10px;
     height: 100px;
     
+    padding: 5%;
+
+    justify-content: center;
+    align-items: center;
+
     /*Para ajustar os espaçamentos dos blocos:*/
     box-sizing: border-box;
-
     /* Borda arredondada */
     border-radius: 10px;
+}
+
+.box-simulacao-content{
+    justify-content: center;
+    align-items: center;
+
 }
 
 .historico{

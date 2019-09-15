@@ -1,0 +1,32 @@
+{
+    "name": "simula-grao",
+    "version": "0.0.1",
+    "description": "Simulador de compra e venda de grãos na bolsa de valores.",
+    "main": "app.js",
+    "directories": {
+      "example": "root"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node app.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/creativetimofficial/material-dashboard.git"
+    },
+    "keywords": [
+      "stock exchange"
+    ],
+    "author": "Marcos",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/creativetimofficial/material-dashboard/issues"
+    },
+    "devDependencies": {
+    },
+    "homepage": "http://demos.creative-tim.com/material-dashboard/examples/dashboard.html?_ga=2.143239282.69692347.1519629130-329288944.1519374311",
+    "dependencies": {
+      "chart": "^0.1.2",
+      "express": "^4.16.4"
+    }
+  }
