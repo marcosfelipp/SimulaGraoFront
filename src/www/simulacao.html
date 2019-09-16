@@ -15,7 +15,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">        </a>
+        <a class="navbar-brand" href="./index.html">Voltar</a>
         <a class="navbar-brand" href="#">SimulaGrão</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,12 +67,12 @@
 
     <div class="boxes">
         <div class="box">
-            <img src="./img/corn.svg" alt="">
+            <img src="./assets/img/corn.svg" alt="">
             $ 38,50 ▲ 0,41%
         </div>
 
         <div class="box">
-            <img src="./img/soy.svg" alt="">
+            <img src="./assets/img/soy.svg" alt="">
             $ 38,50 ▼ -2,15%
         </div>
 
@@ -82,30 +82,28 @@
         </div>
     </div>
 
-    <div class="simulacao">
-        <div class="box-simulacao">
-            <h3>Simular Compra</h3>
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Escolha o produto</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Soja</option>
+                <option>Milho</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Código na bolsa</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>S</option>
+                <option>D</option>
+            </select>
         </div>
 
-        <div class="box-simulacao">
-            <h3>Simular Venda</h3>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Quantidade </label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="100">
         </div>
-
-    </div>
-
-    <div class="historico">
-        <h2>Histórico</h2>
-
-        <div class="container">
-            <ul class="list-group">
-                <li class="list-group-item"> <a href="./historico.html">Venda</a> </li>
-                <li class="list-group-item">Venda</li>
-                <li class="list-group-item">Compra</li>
-                <li class="list-group-item">Venda</li>
-            </ul>
-        </div>
-
-    </div>
+        <button class="btn btn-primary" type="submit">Vender</button>
+    </form>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -116,6 +114,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script src="./assets/js/tootip.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@ app.get('/',function(req,res){
     console.log(path.dirname(__filename));
     console.log(__dirname)
     res.sendFile(html_dir + 'dashboard.html');
+    console.log('Connection')
   });
 
 var server = app.listen(8080, function () {

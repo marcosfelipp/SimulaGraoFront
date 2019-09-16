@@ -21,7 +21,7 @@ function renderChart(data, labels) {
         options: {
             animation: {
                 duration: 0,
-            },
+            }
         }
     });
 
@@ -30,7 +30,11 @@ function renderChart(data, labels) {
 
     // Pontos notáveis:
     myChart.getDatasetMeta(0).data[10].custom = { backgroundColor: 'red' };
-    myChart.getDatasetMeta(0).data[20].custom = { backgroundColor: 'red' };
+    myChart.getDatasetMeta(0).data[22].custom = { backgroundColor: 'red' };
+    myChart.getDatasetMeta(0).data[30].custom = { backgroundColor: 'red' };
+    myChart.getDatasetMeta(0).data[39].custom = { backgroundColor: 'red' };
+    myChart.getDatasetMeta(0).data[44].custom = { backgroundColor: 'red' };
+
 
     // Data de hoje:
     myChart.getDatasetMeta(0).data[45].custom = { backgroundColor: 'blue' };
@@ -40,10 +44,10 @@ function renderChart(data, labels) {
 }
 
 setInterval(function () {
-    horarios = ['12/04', '', '', '', '', '', '', '', '', '',
-        '', '', '', '', '', '', '', '', '', '',
-        '', '', '', '', '', '', '', '', '', '',
-        '', '', '', '', '', '', '', '', '', '',
-        '', '', '', '', '', ''];
+    horarios = ['12/04', '13/04', '14/04', '15/04', '16/04', '17/04', '18/04', '19/04', '20/04', '21/04',
+        '22/04', '23/04', '24/04', '25/04', '26/04', '27/04', '28/04', '29/04', '30/04', '01/05',
+        '02/05', '03/05', '04/05', '05/05', '06/05', '07/05', '08/05', '09/05', '10/05', '11/05',
+        '12/05', '13/05', '14/05', '15/05', '16/05', '17/05', '18/05', '19/05', '20/05', '21/05',
+        '22/05', '23/05', '24/05', '25/05', '26/05', '27/05'];
     renderChart(data, horarios);
 }, 8000);
