@@ -76,7 +76,7 @@ a { color: inherit;}
     width: 40%;
     margin-left: 1%;
     padding: 10px;
-    height: 100px;
+    height: 60px;
     
     padding: 5%;
 
@@ -115,4 +115,40 @@ a { color: inherit;}
 
     /* Borda arredondada */
     border-radius: 10px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    color: #002f35;
+    text-align: center;
+
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box-footer{
+    float: left;
+    width: 30%;
+    margin-left: 1%;
+    padding: 10px;
+    height: 60px;
+
+    /*Para ajustar os espaçamentos dos blocos:*/
+    box-sizing: border-box;
+
+}
+
+.footer img{
+    border-radius: 4px;
+    padding: 5px;
+    width: 40px;
 }
