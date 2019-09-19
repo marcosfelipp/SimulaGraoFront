@@ -6,11 +6,30 @@ body{
 
 .overview{
     background: #004a2f;
-    height: 70px;
+    height: 250px;
     color: #ffffff;
 
     padding-left: 5%;
     padding-top: 5%;
 
+}
+
+.graph{
+    height: 320px;
+    color: #ffffff;
+
+    padding-left: 5%;
+    padding-top: 5%;
+
+    width: 90%;
+    margin: auto;
     /* background: url('./img.jpg') no-repeat fixed center; */
+}
+
+.content{
+    height: 70px;
+
+    padding-left: 5%;
+    padding-top: 5%;
+
 }
