@@ -39,14 +39,14 @@
 
     <div class="overview ">
         <h4>
-            Olá João
+            Olá <b>João</b>
         </h4>
 
         <p>Dinheiro investido:</p>
-        <h5>R$ 2.356.400,00 </h5>
+        <h5><b>R$ 2.356.400,00</b></h5>
 
         <p>Meu celeiro:</p>
-        <h5>Milho: 500sc Soja: 300sc </h5>
+        <h5>Milho: <b>500sc</b> Soja: <b>300sc</b></h5>
     </div>
 
     <div class="boxes">
@@ -66,32 +66,49 @@
         </div>
     </div>
 
-    <div class="simulacao">
-        <div class="box-simulacao">
-            <h3><a href="./simulacao.html">Simular Venda</a></h3>
-        </div>
-
-        <div class="box-simulacao">
-            <div class="box-simulacao-content">
-                <h3>Simular Compra</h3>
-            </div>
-        </div>
-
-    </div>
-
     <div class="historico">
-        <h2>Histórico</h2>
+        <h5>Histórico de simulações de Hedge</h5>
+        <table class="table ">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Data do negócio</th>
+                    <th scope="col">Cultura</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><img src="./assets/img/soy.svg" alt=""> Soja</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td><img src="./assets/img/corn.svg" alt=""> Milho</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td><img src="./assets/img/corn.svg" alt=""> Milho</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
 
-        <div class="container">
-            <ul class="list-group">
-                <li class="list-group-item"> <a href="./historico.html">Venda</a> </li>
-                <li class="list-group-item">Venda</li>
-                <li class="list-group-item">Compra</li>
-                <li class="list-group-item">Venda</li>
-            </ul>
-        </div>
+        <button type="button" class="btn btn-success">Nova simulação</button>
+
+        <canvas id="myChart"  ></canvas>
 
     </div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -102,23 +119,29 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script src="./assets/js/Graph.js"></script>
 </body>
 
 <div class="footer">
-    <div class="box-footer">
-        <img src="./assets/img/transaction.svg" alt="">
+    
+    <div class="footer-menu" id="mobile">
+        <div class="box-footer">
+            <img src="./assets/img/transaction.svg" alt="">
+        </div>
+        <div class="box-footer">
+            <a href="meu_celeiro.html">
+                <img src="./assets/img/celeiro.svg" alt="">
+            </a>
+    
+        </div>
+        <div class="box-footer">
+            <a href="minha_fazenda.html">
+                <img src="./assets/img/trator.svg" alt="">
+            </a>
+        </div>
     </div>
-    <div class="box-footer">
-        <a href="meu_celeiro.html">
-            <img src="./assets/img/celeiro.svg" alt="">
-        </a>
-
-    </div>
-    <div class="box-footer">
-        <a href="minha_fazenda.html">
-            <img src="./assets/img/trator.svg" alt="">
-        </a>
-    </div>
+    
 </div>
 
 </html>

@@ -3,7 +3,7 @@ body{
     background: #ff6337;
     color: #004a2f;
     background: url('../img/agriculture-blue-sky-cloudiness-2888333.jpg')  no-repeat;
-    background-size: 1400px;
+	background-size: 100% 100%;
 }
 
 html,body {
